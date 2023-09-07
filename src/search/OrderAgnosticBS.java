@@ -44,5 +44,4 @@ public class OrderAgnosticBS {
 		ans = orderAgnosticBinarySearch(desc, target);
 		System.out.println("for descending " + ans);
 	}
-
 }
