@@ -12,8 +12,16 @@ public class Swap2Index {
 		arr[index1] = arr[index2];
 		arr[index2] = swap;
 	}
+	
+	public static void swapWithoutThird(int a , int b) {
+		a = a + b;
+		b = a - b;
+		a = a - b;
+		System.out.println(" a = "  + a  + " b = "+ b);
+	}
 
 	public static void main(String[] args) {
+		
 		
 		int[] arr = {1,2,5,15,33,7};
 		int[] a = new int[5];
@@ -25,6 +33,7 @@ public class Swap2Index {
 	
 		swap(arr, 2, 4); 
 		swap(a, 1, 3);
+		swapWithoutThird(10, 3);
 		
 		System.out.println(Arrays.toString(arr));
 		System.out.println(Arrays.toString(a));
