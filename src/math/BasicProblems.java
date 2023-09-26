@@ -89,14 +89,25 @@ public class BasicProblems {
 	}
 
 	public static void costPriceCalculator() {
-	// Calculate cp if the selling price(sp) is 200 and loss is 20
-		double sp = 200.0; 
-		double lossPercentage = 20.0; 
+		// Calculate cp if the selling price(sp) is 200 and loss is 20
+		double sp = 200.0;
+		double lossPercentage = 20.0;
 
-	// Calculate the cost price (cp)
 		double cp = (100.0 / (100.0 - lossPercentage)) * sp;
-
 		System.out.println(cp);
+	}
+
+	public static void numberPattern() {
+		int i = 1, j = 1;
+		while (i <= 4) {
+			j = 1;
+			while (j <= 4) {
+				System.out.print(j + " ");
+				j++;
+			}
+			System.out.println(); 
+			i++;
+		}
 	}
 
 	public static void main(String[] args) {
@@ -127,9 +138,12 @@ public class BasicProblems {
 
 		System.out.print("9. Arithmetic Expression => ");
 		arithmeticExpression();
-		
+
 		System.out.print("10. Cost Price => ");
 		costPriceCalculator();
+		
+		System.out.println("11. Number Pattern ");
+		numberPattern();
 	}
 
 }
